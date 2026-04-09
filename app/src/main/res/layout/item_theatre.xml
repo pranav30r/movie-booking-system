@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvTheatreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="PVR: ICON, Empress Mall"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTheatreLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nagpur | 2.5 km away"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llShowTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="10:00 AM"
+                tools:visibility="visible"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/rounded_input"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="01:30 PM"
+                tools:visibility="visible"
+                android:background="@drawable/rounded_input"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
